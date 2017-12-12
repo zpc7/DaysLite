@@ -1,12 +1,34 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/user/user"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#3586CD",
+        "navigationBarTextStyle": "white",
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "Days Lite"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath":"images/index.png",
+            "selectedIconPath":"images/index-active.png"
+        }, {
+            "pagePath": "pages/logs/logs",
+            "text": "Moment",
+            "iconPath":"images/moment.png",
+            "selectedIconPath":"images/moment-active.png"
+        }, {
+            "pagePath": "pages/user/user",
+            "text": "我的",
+            "iconPath":"images/user.png",
+            "selectedIconPath":"images/user-active.png"
+        }],
+        "color":"#627699",
+        "selectedColor":"#1296db",
+        "position":"bottom"
+    }
 }
