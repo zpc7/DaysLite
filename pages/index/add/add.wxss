@@ -1,0 +1,17 @@
+.add-title{
+    border-bottom: 2rpx solid #CECECE;
+}
+.label-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    float: left;
+    margin-right: 10rpx;
+}
+input{
+    border-bottom: 4rpx solid #3585CD;
+    margin-right: 38rpx;
+}
+.section{
+    padding: 34rpx 22rpx 26rpx 22rpx;
+}

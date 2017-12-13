@@ -11,6 +11,9 @@
         </view>
     </block>
     <view>
-        <image bind:tap="addEvent" class="add" src="../../images/add.png"/>
+        <navigator url="./add/add" hover-class="navigator-hover">
+            <image bind:tap="addEvent" class="add" src="../../images/add.png"/>
+        </navigator>
+
     </view>
 </view>

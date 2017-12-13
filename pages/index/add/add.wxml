@@ -1,0 +1,31 @@
+<!-- 新增事件 -->
+<view class="add-title section">
+    <image class="label-icon" src="../../../images/add-title.png"/>
+    <input placeholder="主题" auto-focus/>
+</view>
+<view class="date section">
+    <image class="label-icon" src="../../../images/add-date.png"/>
+    <picker mode="date" value="{{date}}" bindchange="dateChange">
+      <view class="picker"> {{date}} </view>
+    </picker>
+     <switch checked bindchange="switch1Change"/>
+</view>
+<view>{{tt}}
+</view>
+
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
